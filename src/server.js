@@ -10,4 +10,6 @@ server.listen(3000).once('listening', () => console.log(`server started in proce
 
 process.on('SIGTERM', () => server.close(() => process.exit()))
 
-export default server;
+setTimeout(() => {
+  process.exit(1)
+}, Math.random() * 1e4)
