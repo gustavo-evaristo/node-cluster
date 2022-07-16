@@ -1,6 +1,6 @@
 ### Script de teste
 
-````js
+```js
 yarn autocannon -c 500 -d 30 --workers 10 --renderStatusCodes --latency --warmup [ -c 1 -d 2 ] localhost:3000
 ```
 
